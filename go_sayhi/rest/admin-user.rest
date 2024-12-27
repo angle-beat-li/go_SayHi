@@ -1,0 +1,31 @@
+GET http://localhost:8082/api/admin/user/2
+
+### 
+
+POST http://localhost:8082/api/admin/user/create
+Content-Type: multipart/form-data
+
+
+{
+    "username": "liy",
+    "nickname": "liy",
+    "password": "li20010109",
+    "rePassword": "li20010109",
+    "email":  "2607447806@qq.com",
+}
+
+###
+
+POST http://localhost:8082/api/admin/user/create HTTP/1.1
+content-type: application/x-www-form-urlencoded
+
+{
+    "username": "liy",
+    "nickname": "liy",
+    "password": "li20010109",
+    "rePassword": "li20010109",
+    "email":  "2607447806@qq.com"
+}
+
+### 修改密码
+POST http://localhost:8082/api/api/user/updatePassword

@@ -1,0 +1,12 @@
+Port: 8082 #端口
+BaseUrl: https://mlog.club # 网站域名
+IpDataPath: # IP数据文件
+AllowedOrigins:
+  - "*"
+
+# 数据库配置
+DB:
+  # Url: localhost:123456@tcp(localhost:3306)/go_sayhi_db?charset=utf8mb4&parseTime=True&loc=Local
+  Url: root:123456@tcp(127.0.0.1:3306)/go_sayhi_db?charset=utf8mb4&parseTime=True&loc=Local
+  MaxIdleConns: 50
+  MaxOpenConns: 200
